@@ -1,0 +1,114 @@
+.orders-list__orders-region {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.orders-list__view {
+  flex: 1;
+  min-height: 0;
+}
+
+.orders-list__view--table {
+  display: none;
+}
+
+.orders-list__view--cards {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .orders-list__view--table {
+    display: block;
+  }
+
+  .orders-list__view--cards {
+    display: none;
+  }
+}
+
+.orders-list__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.orders-list__order-id {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.orders-list__customer,
+.orders-list__items,
+.orders-list__date {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.orders-list__customer-icon,
+.orders-list__items-icon,
+.orders-list__date-icon {
+  width: 1rem;
+  height: 1rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.orders-list__status-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  border: 1px solid transparent;
+}
+
+.orders-list__status-pill--new {
+  background: var(--status-new-bg);
+  color: var(--status-new-text);
+  border-color: transparent;
+}
+
+.orders-list__status-pill--picking {
+  background: var(--status-picking-bg);
+  color: var(--status-picking-text);
+  border-color: transparent;
+}
+
+.orders-list__status-pill--delivering {
+  background: var(--status-delivering-bg);
+  color: var(--status-delivering-text);
+  border-color: transparent;
+}
+
+.orders-list__status-pill--delivered {
+  background: var(--status-delivered-bg);
+  color: var(--status-delivered-text);
+  border-color: transparent;
+}
+
+.orders-list__empty-state {
+  border: 1px dashed var(--border-default);
+  border-radius: 12px;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  background: var(--bg-surface-muted);
+}
+
+.orders-list__empty-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.orders-list__empty-subtitle {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+}
