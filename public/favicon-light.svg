@@ -1,18 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <rect width="64" height="64" rx="16" fill="#111827" />
+  <rect width="64" height="64" rx="16" fill="#F9FAFB" />
   <path
     d="M20 24h24l-2.5 22a4 4 0 0 1-4 3.5h-11a4 4 0 0 1-4-3.5L20 24Z"
-    fill="#F9FAFB"
+    fill="#111827"
   />
   <path
     d="M25 24a7 7 0 0 1 14 0"
-    stroke="#60A5FA"
+    stroke="#2563EB"
     stroke-width="4"
     stroke-linecap="round"
   />
   <path
     d="m27.5 36 3.2 3.2 6.3-6.3"
-    stroke="#34D399"
+    stroke="#059669"
     stroke-width="4"
     stroke-linecap="round"
     stroke-linejoin="round"
