@@ -1,0 +1,118 @@
+.order-card {
+  border: 1px solid var(--order-card-border);
+  border-radius: var(--order-card-radius);
+  overflow: hidden;
+  background: var(--bg-surface);
+  box-shadow: 0 1px 2px rgba(17, 24, 39, 0.04);
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.15s ease;
+}
+
+.order-card:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+.order-card--striped {
+  background: var(--order-card-strip-bg);
+}
+
+.order-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: var(--order-card-padding);
+  background: var(--order-card-header-bg);
+  border-bottom: 1px solid var(--border-default);
+}
+
+.order-card__id {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.order-card__badge {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 6px;
+  padding: 0.28rem 0.55rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.order-card__badge--new {
+  color: var(--status-new-text);
+  background: var(--status-new-bg);
+}
+
+.order-card__badge--picking {
+  color: var(--status-picking-text);
+  background: var(--status-picking-bg);
+}
+
+.order-card__badge--delivering {
+  color: var(--status-delivering-text);
+  background: var(--status-delivering-bg);
+}
+
+.order-card__badge--delivered {
+  color: var(--status-delivered-text);
+  background: var(--status-delivered-bg);
+}
+
+.order-card__body {
+  padding: var(--order-card-padding);
+  background: var(--bg-surface);
+}
+
+.order-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.order-card__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.65rem;
+  border-radius: 8px;
+  background: var(--order-card-tag-bg);
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+.order-card__tag-text {
+  line-height: 1.2;
+}
+
+.order-card__items-preview {
+  margin: 0.65rem 0 0;
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.order-card__items-label {
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+@media (max-width: 380px) {
+  .order-card__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
